@@ -56,6 +56,12 @@ variable "disk_size_gb" {
   default     = 100
 }
 
+variable "max_run_duration" {
+  description = "The runtime of each node in the node pool in seconds"
+  type        = string
+  default     = null
+}
+
 variable "disk_type" {
   description = "Disk type for each node."
   type        = string

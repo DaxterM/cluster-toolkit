@@ -124,6 +124,8 @@ resource "google_container_node_pool" "node_pool" {
     machine_type    = var.machine_type
     spot            = var.spot
     image_type      = var.image_type
+    max_run_duration = var.max_run_duration
+
 
     dynamic "guest_accelerator" {
       for_each = local.guest_accelerator
